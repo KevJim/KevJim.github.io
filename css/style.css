@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+:root {
+    --black: #232931;
+    --black_light: #393e46;
+    --soft_green: #4ecca3;
+    --white: #eeeeee;
+}
+body, header, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    width: 100%;
+  }
+.header {
+    color: white;
+    font-size: 4rem;
+    margin-top: 16px;
+}
+.subtitle {
+    color: var(--soft_green);
+     font-size: 24px;
+}
+.header-img {
+    border-radius: 50%;
+    border: 1px solid var(--gris-oscuro);
+    box-shadow: 8px 16px 32px 0px var(--shadow);
+    height: 250px;
+    margin-top: 80px;
+    width: 250px;
+}
+
+nav {
+    width: 100%;
+  }
+  
+.navigation {
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    margin: 24px auto;
+    width: 100%;
+    font-size: 1.6rem;
+}
+  
+.nav-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+  
+.nav-item {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    min-width: 65px;
+    width: 33%;
+}
+  
+.nav-item:hover,
+.nav-item:hover a {
+    background-color: var(--soft_green);
+    color: var(--black_light);
+    cursor: pointer;
+}
+  
+.nav-item:focus-within {
+   background-color: var(--soft_green); 
+}
+  
+.nav-item a:focus {
+    outline: none;
+    color: var(--black_light);
+}
+
+
+.intro {
+    margin: 24px 196px 0;
+    color: var(--white);
+    width: 50%;
+}
+  
+.social-media {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 32px auto 0;
+    list-style: none;
+}
+  
+.social-media li a {
+    align-items: center;
+    display: flex;
+    color: var(--white);
+    text-decoration: none;
+}
+  
+.social-media li a:focus{
+    outline: none;
+}
+  
+.social-media li:focus-within {
+    outline: 3px solid var(--soft_green);
+    padding: 8px;
+}
+  
+.social-link-text {
+    padding-right: 8px;
+    padding-left: 8px;
+}
