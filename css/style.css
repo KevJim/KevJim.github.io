@@ -254,7 +254,7 @@ input:focus {
     justify-content: center;
     margin-bottom: 48px;
     width: 150px;
-    margin-left: 70px;
+    margin: 0 auto;
     font-size: 1.6rem;
     cursor: pointer;
 }
