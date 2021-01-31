@@ -14,13 +14,13 @@ html {
     --soft_green: #4ecca3;
     --white: #eeeeee;
 }
-body, header, section {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--black);
     width: 100%;
-  }
+}
 .header {
     color: white;
     font-size: 4rem;
@@ -49,8 +49,8 @@ nav {
     display: flex;
     justify-content: space-around;
     margin: 24px auto;
-    width: 100%;
-    font-size: 1.6rem;
+    width: 90%;
+    font-size: 1.3rem;
 }
   
 .nav-item a {
@@ -84,38 +84,182 @@ nav {
     color: var(--black_light);
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    width: 100%;
+    padding-bottom: 70px;
+}
 
 .intro {
-    margin: 24px 196px 0;
+    width: 80%;
+    margin-top: 40px;
     color: var(--white);
-    width: 50%;
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 2.5rem;
 }
   
 .social-media {
-    align-items: center;
     display: flex;
     justify-content: space-around;
-    margin: 32px auto 0;
+    width: 90%;
+    margin-top: 32px;
     list-style: none;
 }
-  
 .social-media li a {
     align-items: center;
     display: flex;
     color: var(--white);
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-  
+
 .social-media li a:focus{
     outline: none;
 }
   
 .social-media li:focus-within {
-    outline: 3px solid var(--soft_green);
     padding: 8px;
 }
   
 .social-link-text {
     padding-right: 8px;
     padding-left: 8px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+}
+.main-proyects-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.proyects--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+.proyects--title h2 {
+    padding-top: 50px;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.proyects-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.proyects-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-image: url(/img/project4.png);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--soft_green);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 700;
+}
+.proyects-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 190px;
+    background-color: #faf8f7;
+    border: 2px solid var(--black_light);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
+.contact-section {
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+  
+.form-label, .message-input {
+    color: var(--soft_green);
+}
+  
+.message-input input {
+    height: 150px;
+    margin-bottom: 16px;
+}
+  
+input {
+    width: 100%;
+}
+  
+input:focus {
+    outline: 3px solid var(--soft_green);
+    padding: 8px;
+}
+  
+.send-button, .modal-button {
+    align-items: center;
+    background-color: var(--soft_green);
+    border-radius: 5px;
+    color: var(--black_light);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 48px;
+    width: 150px;
+    margin-left: auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.send-button:focus, .modal-button:focus {
+    border: 5px solid var(--black_light);
+    outline: 3px solid var(--soft_green);
+}
+  
+#name-error {
+    color: var(--white);
 }
