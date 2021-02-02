@@ -15,15 +15,15 @@
             <h2 class="subtitle">Front End Developer</h2>
             <nav>
               <ul class="navigation">
-                <li class="nav-item"><a href="#">Acerca de</a></li>
-                <li class="nav-item"><a href="#">Mis Proyectos</a></li>
-                <li class="nav-item"><a href="#">Contacto</a></li>
+                <li class="nav-item"><a href="#AcercaDe">Acerca de</a></li>
+                <li class="nav-item"><a href="#proyects">Mis Proyectos</a></li>
+                <li class="nav-item"><a href="#contact">Contacto</a></li>
               </ul>
             </nav>
     </header>
     <main>
         <section class="info">
-            <h2 class="header">Acerca de</h2>
+            <h2 id="AcercaDe" class="header">Acerca de</h2>
             <p class="intro">
             Hola! Soy Kevin, soy mexicano, me gusta el mundo de la tecnología
             y la ciencia. Actualmente estoy estudiando la Ingeniería en Tecnologías
@@ -73,7 +73,7 @@
                 </article>
             </section>
     </main>
-    <footer class="contact-section">
+    <footer id="contact" class="contact-section">
         <h2 class="header">Contacto</h2>
         <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
         <form class="form-container">
@@ -84,6 +84,16 @@
           <label class="message-input">Mensaje<input type="text" /> <br /></label>
           <button class="send-button">Enviar</button>
         </form>
-      </footer>
+    </footer>
+    <div class="notification" aria-live="assertive"></div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
+        <img src="images/project1.png" class="modal-project-image" alt="un pantallazo de mi project"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="final.js" type="text/javascript"></script>
 </body>
 </html>
