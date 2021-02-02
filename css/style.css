@@ -223,6 +223,10 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 50px;
+}
+.contact-section p {
+    text-align: center;
 }
 .contact-section h2 {
     font-weight: bold;
@@ -281,54 +285,17 @@ input:focus {
 
 .notification {
     align-items: center;
-    background-color: var(--verde);
+    background-color: var(--soft_green);
     border-radius: 5px;
-    box-shadow: 8px 16px 32px 0px var(--shadow);
-    color: var(--gris-oscuro);
+    box-shadow: 8px 16px 32px 0px var(--black_light);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: bold;
     display: none;
-    font-family: var(--secondary-font);
     height: 50px;
     justify-content: center;
     position: fixed;
     right: 24px;
     top: 24px;
     width: 300px;
-}
-  
-.modal-container {
-    align-items: center;
-    background-color: rgba(000, 000, 000, 0.2);
-    display: none;
-    height: 100vh;
-    justify-content: center;
-    position: fixed;
-    width: 100vw;
-}
-  
-#modal-header {
-    outline: 3px solid var(--verde);
-}
-  
-.modal {
-    align-items: center;
-    background-color: var(--gris-oscuro);
-    border-radius: 5px;
-    border: 2px solid #000;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    justify-content: center;
-    position: fixed;
-    top: 5%;
-    width: 700px;
-    padding: 56px;
-}
-  
-.modal-project-image {
-    background: center / cover no-repeat url(./images/project1.png);
-    border-radius: 5px;
-    border: 2px solid #000;
-    height: 400px;
-    margin: 16px;
-    width: 550px;
 }
