@@ -179,7 +179,8 @@ main {
     height: 250px;
     margin: 50px 10px 0;
     padding: 0 15px;
-    background-image: url(/img/project4.png);
+    background-image: url(/img/batatabit.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -230,7 +231,7 @@ main {
 .form-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
 }
   
 .form-label, .message-input {
