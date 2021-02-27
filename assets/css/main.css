@@ -5,7 +5,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+:root {
+    /* Colores */
+    --black: #212121;
+	--dark-green: #0d7377;
+	--green: #32e0c4;
+	--white: #eeeeee;
+}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -98,7 +104,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: var(--black);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3240,15 +3246,15 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: var(--black);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: var(--green);
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: var(--black);
 		}
 
 		.wrapper.style2-alt {
@@ -3256,7 +3262,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: var(--black);
 		}
 
 		.wrapper.style3-alt {
@@ -3493,6 +3499,7 @@ input, select, textarea {
 
 	#sidebar + #wrapper + #footer {
 		margin-left: 18em;
+		color: var(--white);
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3513,7 +3520,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3524,7 +3531,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: var(--green);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3737,7 +3744,6 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3761,14 +3767,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: var(--white);
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, var(--white), var(--white));
+				background-image: -webkit-linear-gradient(to right, var(--white), var(--white));
+				background-image: -ms-linear-gradient(to right, var(--white), var(--white));
+				background-image: linear-gradient(to right, var(--white), var(--white));
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3857,7 +3863,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: var(--white);
 						}
 
 		}
