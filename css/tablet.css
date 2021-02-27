@@ -1,9 +1,0 @@
-.main-proyects-container {
-    display: flex;
-    width: 930px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-.proyects-container--slider {
-    justify-content: center;
-}
